@@ -1,0 +1,140 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+/* nav 配置*/
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 960px;
+}
+
+nav a {
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 34px;
+    color: black;
+}
+/*nav MyProfileの部分*/
+.home{
+    border: 1px solid black;
+    padding: 0px 20px;
+    margin-left: 20px;
+}
+/* nav class menuの子要素　a2つに対する指示 */
+.menu > a {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+/* main写真 */
+.mainpic{
+    width: 100%;
+}
+/* 全ての写真は親要素からはみ出さない */
+img{
+    margin: 0 auto;
+    max-width: 100%;
+}
+/* 全div要素の余計な空白を削除 */
+div{
+    font-size: 0;
+}
+h1{
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 700px;
+    font-size: 34px;
+    text-align: center;
+    margin: 40px auto;
+}
+/*sectionの配置*/
+    .discribe{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+        align-items: center;
+        width: 100%;
+        max-width: 960px;
+        margin: 20px auto;
+    }
+/* 丸い写真 */
+    .circle{
+        border-radius: 50%;
+        object-fit: cover;
+        width: 280px;
+        height: 280px;
+        border: 3px solid #999;
+        padding: 0px;
+        margin: 0px 0px 0px 0px;
+        
+    }
+/*content の配置 */
+    .content{
+        align-self: flex-start;
+        padding-left: 60px;
+        margin-top: opx;
+
+    }
+
+    p{
+        font-family: "Noto Sans JP", sans-serif;
+        font-size: 18px;
+    }
+/* 名前 */
+    .name{
+        font-weight: bold;
+        font-size: 24px;
+        margin-top: 0px;
+        margin-bottom: 40px;
+    }
+    
+    li{
+        font-family: "Noto Sans JP", sans-serif;
+        font-size: 18px;
+    }
+/* worksの配置 */
+    .works{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        max-width: 960px;
+        margin: 20px auto 20px auto;
+
+    }
+/* 写真１,3の位置調整 */
+    .item{
+        flex: 1;
+        width: 25%;
+        padding-bottom: 60px;
+        text-align: center;
+    }
+/* 写真中央位置調整 */
+    .item_center{  
+        flex: 1;
+        width: 25%;
+        padding: 0px 40px 60px 40px;
+        text-align: center;  
+    }
+
+    footer p{
+        text-align: center;
+    }
+    @media(max-width: 767px){
+        
+            .works {
+                flex-direction: column;
+                align-items: center;
+            }
+            .item, .item_center {
+                width: 100%;
+                padding: 0 0 40px 0;
+            }
+            
+        }
+        
